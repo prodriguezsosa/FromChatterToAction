@@ -1,0 +1,37 @@
+---
+title: "README"
+output: github_document
+---
+# From Chatter to Action: How Social Networks Inform and Motivate in Rural Uganda
+
+This repository contains the replication materials for the article "From Chatter to Action: How Social Networks Inform and Motivate in Rural Uganda", to be published in _The British Journal of Political Science_, by Jennifer M. Larson, Janet Lewis and Pedro L. Rodriguez.
+
+## Required Software and Packages
+
+`R (4.0.5)`:\
+- dplyr\
+- ggplot2\
+- magrittr\
+- linkcomm\
+- RColorBrewer\
+- reshape2\
+- data.table\
+- car\
+- plyr\
+- nlme\
+- stargazer\
+- gdata\
+- igraph\
+
+## Data
+
+The raw data consists of one file: `abalang.csv`.
+
+## Code
+
+Replication code consists of two scripts.
+
+* process_data: prepares data for analysis.
+* run_analysis: runs all analysis and outputs all tables and figures in the paper and supplementary information.
+
+Run `process_data` before running `run_analysis`.
