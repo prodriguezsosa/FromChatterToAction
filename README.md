@@ -3,9 +3,9 @@ README
 
 # From Chatter to Action: How Social Networks Inform and Motivate in Rural Uganda
 
-This repository contains the replication materials for the article “From
+This repository contains the replication materials for the article [“From
 Chatter to Action: How Social Networks Inform and Motivate in Rural
-Uganda”, to be published in *The British Journal of Political Science*,
+Uganda”](https://github.com/prodriguezsosa/FromChatterToAction/blob/master/paper/), to be published in *The British Journal of Political Science*,
 by Jennifer M. Larson, Janet Lewis and Pedro L. Rodriguez.
 
 ## Required Software and Packages
