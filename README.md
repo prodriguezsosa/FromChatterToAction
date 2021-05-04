@@ -31,7 +31,7 @@ The raw data consists of one file: `abalang.csv`.
 
 ## Code
 
-Replication code consists of two scripts.
+[Replication code](https://github.com/prodriguezsosa/FromChatterToAction/blob/master/code/) consists of two scripts.
 
   - process\_data: prepares data for analysis.
   - run\_analysis: runs all analysis and outputs all tables and figures
