@@ -150,7 +150,8 @@ for(j in 1:ncol(span.matrix)){
 #ggplot(melt(span.matrix), aes(Var2, Var1)) + 
 ggplot(reshape2::melt(span.matrix), aes(Var2, Var1)) + 
   geom_tile(aes(fill = value)) + 
-  scale_fill_gradientn(colours = c("aliceblue", "steelblue1", "steelblue2", "steelblue3", "steelblue4"), values = c(0, 0.1, 0.2, 0.3, 1), guide = "colorbar") +
+  #scale_fill_gradientn(colours = c("aliceblue", "steelblue1", "steelblue2", "steelblue3", "steelblue4"), values = c(0, 0.1, 0.2, 0.3, 1), guide = "colorbar") +
+  scale_fill_gradientn(colours = c("gray100", "gray80", "gray60", "gray40", "gray30"), values = c(0, 0.1, 0.2, 0.3, 1), guide = "colorbar") +
   geom_text(aes(label = round(reshape2::melt(span.matrix)$value, 3)), size = 4) +
   scale_x_discrete(labels=c("Meal", "Phone", "Politics", "Religion", "Secret", "Time", "Visit"), expand = c(0, 0)) +
   scale_y_discrete(labels=c("Meal", "Phone", "Politics", "Religion", "Secret", "Time", "Visit"), expand = c(0, 0)) +
@@ -560,7 +561,8 @@ lbls <- c("Meal", "Phone", "Politics", "Religion", "Secret", "Time", "Visit")
 pct <- round(slices/sum(slices)*100)
 lbls <- paste(lbls, pct) # add percents to labels 
 lbls <- paste(lbls,"%",sep="") # ad % to labels 
-pie(slices,labels = lbls, col=rainbow(length(lbls)))
+#pie(slices,labels = lbls, col=rainbow(length(lbls)))
+pie(slices,labels = lbls, col=c("gray85", "gray75", "gray65", "gray45", "gray35", "gray25", "gray15"))
 #dev.off()
 
 #################################################################################################################

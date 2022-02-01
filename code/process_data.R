@@ -107,7 +107,7 @@ ConstructEdgelist <- function(df, layers, directed){
 #################################################################################################################
 
 # Set working directory
-data <- read.csv(paste0(in_path, "abalang.csv"), stringsAsFactors = FALSE)
+data <- read.csv(paste0(in_path, "abalang_deidentified.csv"), stringsAsFactors = FALSE)
 # Construct variable identifying Abalang residents (broadest definition)
 data$abalang1 <- ifelse(data$CoarseVlg == "ABALANG" | data$CoarseVlg == "AKUM" | data$CoarseVlg == "ALOET" | data$CoarseVlg == "CENTRAL" | data$CoarseVlg == "UNKNOWN" | data$CoarseVlg == "AKAIKAI" | data$CoarseVlg == "GWERI" | data$CoarseVlg == "OGOLOID", 1, 0)
 # Construct variable identifying Abalang residents (intermediate definition)
